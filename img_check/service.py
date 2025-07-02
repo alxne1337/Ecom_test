@@ -25,7 +25,7 @@ async def check_img(file: File) -> bool:
                 'image': (file.filename, contents, file.content_type)
             }
 
-            response = await client.post("https://api.deepai.org/api/nsfw-detector",
+            response = await client.post("https://deepai.org/machine-learning-model/nsfw-detector",
                                 files=files,
                                 headers={'Api-Key': os.getenv('API_KEY')}
                             )
