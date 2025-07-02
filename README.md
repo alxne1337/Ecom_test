@@ -1,6 +1,10 @@
-NSFW Content Moderation API
+NSFW Content Moderation API  
 
 Это простое backend-приложение, написанное на Python с использованием FastAPI, которое принимает изображение через POST-запрос и проверяет его на наличие нежелательного (NSFW) контента с помощью бесплатного сервиса DeepAI NSFW API.
+
+## ВАЖНО
+Тестировал разные ссылки и способы, спросил у самого deepAI, ничего нельзя поделать, по реквесту на предложенную ссылку присылается ответ "This distribution is not configured to allow the HTTP request method that was used for this request. The distribution supports only cachable requests.\nWe can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error."  
+Если использовать предложенную самой нейросетью https://api.deepai.org/api/nsfw-detector ловится "Out of API credits - please enter payment info in your dashboard: https://deepai.org/dashboard\"
 
 ## Установка и запуск
     - Требования
